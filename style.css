@@ -1,5 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: pink;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #ffd6e8);
+  color: #333;
   text-align: center;
-  font-family: Arial;
+}
+
+/* Header */
+header {
+  background: #ff66b2;
+  color: white;
+  padding: 30px 10px;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* Photos */
+.photos {
+  margin: 25px auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff4da6;
+  transition: transform 0.3s ease;
+}
+
+.photos img:hover {
+  transform: scale(1.08);
+}
+
+/* Button */
+#flirtBtn {
+  margin-top: 25px;
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+  background: #ff3366;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#flirtBtn:hover {
+  background: #ff1a53;
+  transform: scale(1.05);
+}
+
+/* Message */
+.messageBox {
+  margin-top: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #d6004c;
+  min-height: 50px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: #333;
+  color: white;
+  font-size: 14px;
 }
